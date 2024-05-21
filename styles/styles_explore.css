@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Afacad;
+    src: url(/assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: Afacad;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar {
+    background: #1b2024;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    padding: 10px 0 10px 30px;
+}
+
+.logo-nav {
+    font-size: large;
+    cursor: pointer;
+}
+
+.item {
+    margin: 5px;
+}
+
+.item a, .item i {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.item a:hover {
+    color:#93c1cf;
+}
+
+header {
+    padding: 10px 0 10px 30px;
+}
+
+.searchBar, .buttonSignin, .buttonLogin {
+    border-radius: 8px;
+    padding: 6px;
+    border-style: none;
+}
+
+.searchBar {
+    background: transparent;
+    width: 500px;
+    color: whitesmoke;
+    font-size: medium;
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.userButtons {
+    margin: 6px;
+}
+
+.buttonSignin, .buttonLogin {
+    cursor: pointer;
+    font-weight: bolder;
+    background: #93c1cf;
+    color: #1b2024;
+}
+
+.buttonSignin:hover, .buttonLogin:hover {
+    background: #a4d7e7;
+}
+body {
+    width: 100%;
+    background: #121212;
+    color: whitesmoke;
+
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+ul {
+    list-style: none;
+}
+
+section {
+    margin: 40px;
+}
+
+.most-searched {
+    margin-top: 20px;
+}
+.most-searched >h2, .search >h2 {
+    color: #93c1cf;
+    margin-bottom: 10px;
+}
+.most-searched >img {
+  width: 800px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.search {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.search >img {
+  width: 800px;
+  height: auto;
+  margin-top: 10px;
+}
+.search >p {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+footer {
+    padding: 10px 0 10px 30px;
+    background: #17191a;
+}

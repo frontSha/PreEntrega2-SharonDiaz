@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Afacad;
+    src: url(/assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
+}
+
+* {
+	box-sizing: border-box;
+    font-family: Afacad;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #121212;
+}
+
+.container {
+    color: whitesmoke;
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px 40px 20px 40px;
+	background-color: #1b2024;
+	border-radius: 4px;
+}
+
+.form {
+    padding-top: 12px;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    border-radius: 8px; 
+    padding: 6px;
+    border-style:ridge;
+    background: transparent;
+    width: 400px;
+    color: whitesmoke;
+    font-size: medium;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    outline: none;
+}
+
+#login {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.botones-redes {
+	display: block;
+	width: 100px;
+	padding: 10px;
+	background-color: #93c1cf;
+	color: #1b2024;
+	border: none;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.botones-redes:hover {
+	background-color: #a4d7e7;
+}
+
+button[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	background-color: #141414;
+	color: whitesmoke;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #121212;
+}
+
+.return {
+	display: flex;
+	margin-top: 20px;
+	gap: 6px;
+	align-items: center;
+}
+
+.return a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.return a:hover{
+	text-decoration: underline;
+}

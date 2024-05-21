@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Afacad;
+    src: url(/assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: Afacad;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #121212;
+}
+
+main {
+    color: whitesmoke;
+}
+
+.sidebar{
+    background: #1b2024;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    padding: 10px 0 10px 30px;
+}
+
+.logo-nav{
+    font-size: large;
+    cursor: pointer;
+}
+
+.item {
+    margin: 5px;
+}
+
+.item a, .item i {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.item a:hover{
+    color:#93c1cf;
+}
+
+header {
+    padding: 10px 0 10px 30px;
+}
+
+.searchBar, .buttonSignin, .buttonLogin{
+    border-radius: 8px;
+    padding: 6px;
+    border-style: none;
+}
+
+.searchBar{
+    background: transparent;
+    width: 500px;
+    color: whitesmoke;
+    font-size: medium;
+}
+
+.searchBar:focus{
+    outline: none;
+}
+
+.userButtons {
+    margin: 6px;
+}
+
+.buttonSignin, .buttonLogin{
+    cursor: pointer;
+    font-weight: bolder;
+    background: #93c1cf;
+    color: #1b2024;
+}
+
+.buttonSignin:hover, .buttonLogin:hover{
+    background: #a4d7e7;
+}
+
+section {
+    margin: 40px;
+}
+
+.music-forum, .general-forum {
+    background: #17191a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.forum-1, .forum-2, .forum-3, .forum-4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    color: #93c1cf;
+}
+
+section h3:hover {
+    color: #93c1cf;
+    cursor: pointer;
+}
+
+aside {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+aside h3 {
+    color: #93c1cf;
+}
+
+aside a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside h4 {
+    margin: 5px;
+}
+
+footer {
+    padding: 10px 0 10px 30px;
+    background: #17191a;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}

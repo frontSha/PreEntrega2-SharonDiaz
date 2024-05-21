@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/styles_register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="post">
+        <h2>Regístrate con nosotros</h2>
+        <div class="form">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Nombre de usuario"
+            required/>
+        </div>
+        <div class="form">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required/>
+        </div>
+        <div class="form">
+          <input
+            type="password"
+            id="clave"
+            name="clave"
+            placeholder="Contraseña"
+            required/>
+        </div>
+        <div class="form">
+          <label for="avatar">Foto de perfil:</label>
+          <input type="file" id="avatar" name="avatar" />
+        </div>
+        <div class="form">
+          <label for="login">Regístrate también usando:</label>
+          <div id="login">
+            <a href="#" class="botones-redes">Google</a>
+            <a href="#" class="botones-redes">Twitter</a>
+            <a href="#" class="botones-redes">Facebook</a>
+          </div>
+        </div>
+        <button type="submit" id="boton-registro">Registrarse</button>
+        <div class="return">
+          <i class="ri-arrow-left-circle-line"></i>
+          <h4><a href="./index.html">Volver al inicio</a></h4>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,314 @@
+@font-face {
+    font-family: Afacad;
+    src: url(/assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: Afacad;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #121212;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sidebar{
+    width: 170px;
+    background: #1b2024;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.container-right{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0 0 30px;
+    gap: 60px;
+    height: 100%;
+    width: 170px;
+}
+
+.item a, .item i{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: 500;
+}
+
+div.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item a:hover{
+    color:#93c1cf;
+}
+
+.logo-nav{
+    color: whitesmoke;
+    font-size: large;
+    cursor: pointer;
+}
+
+header {
+    background: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.buttonSignin, .buttonLogin{
+    cursor: pointer;
+    font-weight: 900;
+    background: #93c1cf;
+    color: #1b2024;
+}
+
+.buttonSignin:hover, .buttonLogin:hover{
+    background: #a4d7e7;
+}
+
+.userButtons{
+    display: flex;
+    gap: 10px;
+    width: 150px;
+    justify-content: flex-end;
+}
+
+.searchBar, .buttonSignin, .buttonLogin{
+    border-radius: 8px; 
+    padding: 6px;
+    border-style: none;
+}
+
+.searchBar{
+    background: transparent;
+    width: 500px;
+    color: whitesmoke;
+    font-size: medium;
+}
+
+.searchBar:focus{
+    outline: none;
+}
+
+.ri-search-line{
+    color: gray;
+    transform: translateY(-50%);
+}
+
+.webInfo{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 235px;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+}
+
+.title{
+    color: #93c1cf;
+    font-size: x-large;
+}
+
+.signin-btn{
+    padding: 6px 8px;
+    background: #93c1cf;
+    border-radius: 8px;
+    color: #1b2024;
+    font-size: 15px;
+    font-weight: bolder;
+    border-style: none;
+    cursor: pointer;
+}
+
+.signin-btn:hover{
+    background: #a4d7e7;
+}
+
+.section-artists{
+    width: 100%;
+    height: 235px;
+    padding: 20px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #17191a;
+}
+
+.imgA{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.headline{
+    color: #93c1cf;
+    font-size: medium;
+}
+
+.artistsRow{
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.artistRanking{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.artists{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.artist-1{
+    order: 2;
+}
+
+.artist-3{
+    order: 3;
+}
+
+.section-review{
+    width: 100%;
+    height: 350px;
+    color: whitesmoke;
+    padding: 30px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section-review h2{
+    color: #93c1cf;
+}
+
+.container-review{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px
+}
+
+.card-review{
+    padding: 30px;
+    border-radius: 8px;
+    background: #17191a;
+    margin-top: 30px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.card-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-left img{
+    width: 150px;
+    height: 150px;
+}
+
+.line{
+    height: 2px; 
+    background-color: whitesmoke; 
+    margin: 10px 0; 
+}
+
+.text-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.text-user{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.listen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons img{
+    width: auto;
+    height: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    background: #17191a;
+    padding: 20px 40px 20px 40px;
+    gap: 30px;
+    color: whitesmoke;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
