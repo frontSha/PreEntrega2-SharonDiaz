@@ -18,33 +18,29 @@
   </head>
   <body>
     <main class="d-flex no-wrap">
-      <div class="sidebar">
-        <nav class="navbar">
-          <div class="logo-nav">
-            <h1 class="logo">Musify.</h1>
-          </div>
-          <div class="item">
-            <i class="ri-home-2-line"></i>
-            <a href="./index.html">Inicio</a>
-          </div>
-          <div class="item">
-            <i class="ri-menu-search-line"></i>
-            <a href="./explore.html">Explorar</a>
-          </div>
-          <div class="item">
-            <i class="ri-play-list-line"></i>
-            <a href="./lists.html">Listas</a>
-          </div>
-          <div class="item">
-            <i class="ri-star-line"></i>
-            <a href="./reviews.html">Reseñas</a>
-          </div>
-          <div class="item">
-            <i class="ri-user-smile-line"></i>
-            <a href="./forums.html">Foros</a>
-          </div>
-        </nav>
+      <div class="sidebar d-flex flex-column flex-shrink-0 pt-2 p-4">
+        <div class="sidebar__logo d-flex align-items-center justify-content-center mb-3">
+          <h1>Musify.</h1>
+        </div>
+        <ul class="sidebar__nav nav flex-column mb-auto gap-4">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link active" aria-current="page"><i class="ri-home-2-line pe-none me-2"></i>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./explore.html" class="nav-link"><i class="ri-menu-search-line pe-none me-2"></i>Explorar</a>
+          </li>
+          <li class="nav-item">
+            <a href="./lists.html" class="nav-link"><i class="ri-play-list-line pe-none me-2"></i>Listas</a>
+          </li>
+          <li class="nav-item">
+            <a href="./reviews.html" class="nav-link"><i class="ri-star-line pe-none me-2"></i>Reseñas</a>
+          </li>
+          <li class="nav-item">
+            <a href="./forums.html" class="nav-link"><i class="ri-user-smile-line pe-none me-2"></i>Foros</a>
+          </li>
+        </ul>
       </div>
+      
       <div class="container-right">
         <header>
           <div class="search-bar">
