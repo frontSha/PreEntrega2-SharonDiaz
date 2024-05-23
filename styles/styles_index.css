@@ -77,42 +77,42 @@ header {
     top: 0;
 }
 
-.buttonSignin, .buttonLogin{
-    cursor: pointer;
-    font-weight: 900;
-    background: #93c1cf;
-    color: #1b2024;
-}
-
-.buttonSignin:hover, .buttonLogin:hover{
-    background: #a4d7e7;
-}
-
-.userButtons{
+.header__btns{
     display: flex;
     gap: 10px;
     width: 150px;
     justify-content: flex-end;
 }
 
-.searchBar, .buttonSignin, .buttonLogin{
+.button__signin, .button__login{
+    cursor: pointer;
+    font-weight: 900;
+    background: #93c1cf;
+    color: #1b2024;
+}
+
+.button__signin:hover, .button__login:hover{
+    background: #a4d7e7;
+}
+
+.search__input, .button__signin, .button__login{
     border-radius: 8px; 
     padding: 6px;
     border-style: none;
 }
 
-.searchBar{
+.search__input{
     background: transparent;
     width: 500px;
     color: whitesmoke;
     font-size: medium;
 }
 
-.searchBar:focus{
+.search__input:focus{
     outline: none;
 }
 
-.ri-search-line{
+.search__icon{
     color: gray;
     transform: translateY(-50%);
 }
