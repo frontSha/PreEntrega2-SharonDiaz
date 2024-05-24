@@ -180,56 +180,52 @@ header {
     background: #a4d7e7;
 }
 
-.section-artists{
-    width: 100%;
-    height: 235px;
-    padding: 20px 40px 0px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.artist-section{
+    padding: 40px;
     background: #17191a;
+    display: grid;
+    gap: 30px;
 }
 
-.imgA{
+.artist-section__headline{
+    color: #93c1cf;
+    font-size: 3em;
+    text-align: center;
+}
+
+.artist-section__grid{
+    max-width: 100%;
+    height: 100%;
+}
+
+.artists__card{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.artists__card--img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.headline{
-    color: #93c1cf;
-    font-size: medium;
+.artist__card--rank{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.artistsRow{
+.artist__card--rank h3, .artist__card--rank h2{
+    font-size: 1.5em;
     color: whitesmoke;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
-.artistRanking{
-    display: flex;
-    align-items: center;
-    gap: 5px; 
-}
-
-.artists{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.artist-1{
-    order: 2;
-}
-
-.artist-3{
-    order: 3;
+.artists__card h5{
+    color: rgba(245, 245, 245, 0.87);
+    font-size: 1rem;
 }
 
 .section-review{
