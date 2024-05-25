@@ -187,7 +187,7 @@ header {
     gap: 30px;
 }
 
-.artist-section__headline{
+.artist-section__heading{
     color: #93c1cf;
     font-size: 3em;
     text-align: center;
@@ -195,7 +195,6 @@ header {
 
 .artist-section__grid{
     max-width: 100%;
-    height: 100%;
 }
 
 .artists__card{
@@ -224,93 +223,81 @@ header {
 }
 
 .artists__card h5{
-    color: rgba(245, 245, 245, 0.87);
+    color: rgba(245, 245, 245, 0.808);
     font-size: 1rem;
 }
 
 .section-review{
-    width: 100%;
-    height: 350px;
-    color: whitesmoke;
-    padding: 30px 40px 20px 40px;
-    display: flex;
-    flex-direction: column;
+    padding: 40px;
+    max-width: 100%;
+    display: grid;
+    gap: 30px;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
 }
 
-.section-review h2{
+.section-review__heading{
+    color: #93c1cf;
+    text-align: center;
+}
+
+.section-review__container{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container-review__card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #17191a;
+    padding: 20px;
+    border-radius: 8px;
+    color: whitesmoke;
+    max-width: 25rem;
+    min-width: none;
+    gap: 1rem;
+}
+
+.card-review__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-review__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-review__left--img{
+    width: 9rem;
+    height: 9rem;
+    margin: 10px;
+}
+
+.card-review__right a{
     color: #93c1cf;
 }
 
-.container-review{
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px
+.card-review__right h5{
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
-.card-review{
-    padding: 30px;
-    border-radius: 8px;
-    background: #17191a;
-    margin-top: 30px;
-    width: 500px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
+.card-review__right p, .card-review__left h4, .card-review__right h6{
+    color: rgba(245, 245, 245, 0.904);
 }
 
-.card-left{
-    display: flex;
-    flex-direction: column;
+.card-review__left h4{
+    font-size: 1.25em;
 }
 
-.card-left img{
-    width: 150px;
-    height: 150px;
+.card-review__left h3{
+    font-size: 1.5em;
 }
 
-.line{
-    height: 2px; 
-    background-color: whitesmoke; 
-    margin: 10px 0; 
-}
-
-.text-container{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.card-right{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.text-user{
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.listen{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-.icons img{
-    width: auto;
-    height: 25px;
-}
 
 footer{
     display: flex;
