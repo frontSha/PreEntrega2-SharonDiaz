@@ -43,45 +43,45 @@
       
       <div class="container-right">
         <header>
-          <div class="header__search search">
-            <i class="ri-search-line search__icon"></i>
+          <div class="header__search">
+            <i class="ri-search-line header__search--icon"></i>
             <input
               type="search"
               name="fieldSearch"
               id="searchBar"
-              class="search__input"
+              class="header__search--input"
               placeholder="Buscar"
             />
           </div>
-          <div class="header__btns button">
-            <input type="button" value="Ingresa" class="button__login" />
+          <div class="header__btns">
+            <input type="button" value="Ingresa" class="header__btns--login" />
             <input
               type="button"
               value="Regístrate"
-              class="button__signin"
+              class="header__btns--signin"
               onclick="window.location.href='register_form.html'"
             />
           </div>
         </header>
         <!-- sections -->
-        <section class="webInfo">
-          <div class="title">
+        <section class="section-info d-flex flex-column flex-wrap justify-content-between align-items-center">
+          <div class="section-info__heading">
             <h1>Musify.</h1>
           </div>
-          <div class="heading">
+          <div>
             <h2>¡Todo en un sólo lugar!</h2>
           </div>
-          <div class="text">
+          <div>
             <p>
               Explora artistas, álbumes y géneros, y califícalos. Encuentra
               gente con quien compartir tu música.
             </p>
           </div>
-          <div class="signin-btn-main">
+          <div class="section-info__button">
             <input
               type="button"
               value="Regístrate"
-              class="signin-btn"
+              class="section-info__button--signin"
               onclick="window.location.href='register_form.html'"
             />
           </div>
