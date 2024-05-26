@@ -48,16 +48,18 @@ main{
     color: whitesmoke;
     font-size: 1.25rem;
     font-weight: 400;
-}
-
-/* .nav-item{
     display: flex;
-    align-items: center;
-} */
+}
 
 .nav-link:hover{
     color: whitesmoke;
 }
+
+.nav-link__offcanvas {
+    i {
+      color: whitesmoke !important;
+    }
+  }
 
 .sidebar__logo{
     color: whitesmoke;
@@ -85,7 +87,8 @@ header {
 }
 
 .header__search{
-    min-width: 10rem;
+    min-width: 15rem;
+    width: 300px;
     display: flex;
     align-items: center;
 }
@@ -98,7 +101,6 @@ header {
 
 .header__search--input{
     background: transparent;
-    width: 500px;
     color: whitesmoke;
 }
 
@@ -309,10 +311,6 @@ header {
 
 
 footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     background: #17191a;
     padding: 40px;
@@ -322,23 +320,17 @@ footer{
 
 footer p{
     color: rgba(245, 245, 245, 0.808);
+    text-align: center;
 }
 
 .footer__links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: fit-content;
 }
 
 .footer__links ul{
     list-style: none;
-    display: flex;
-    align-items: center;
     margin: auto;
     padding: 0;
-    flex-wrap: wrap;
 }
 
 .footer__links li{
@@ -354,12 +346,26 @@ footer p{
 
 /* Responsive */
 @media (max-width:576px) {
+
+    .section-review{
+        padding: 40px 20px;
+    }
+
     .container-review__card{
         display: flex;
         flex-direction: column;
+        min-width: 13rem;
 
         .card-review__right{
             text-align: justify;
+        }
+
+        .card-review__left h3{
+            font-size: 1.7em;
+        }
+
+        .card-review__left h4{
+            font-size: 1.5em;
         }
 
         .card-review__left--img{
@@ -371,6 +377,15 @@ footer p{
     .artist-section__heading h2, .section-review__heading h2{
         font-size: 1.8rem;
     }
+
+    .artist-section{
+        padding: 40px 0;
+    }
+
+    .section-info{
+        padding: 40px 20px;
+    }
+    
 }
 
 @media (max-width:767px) {
@@ -385,18 +400,15 @@ footer p{
             justify-content: space-evenly;
         }
 
-        .card-review__left h3{
-            font-size: 1.3em;
-        }
-
-        .card-review__left h4{
-            font-size: 1.2em;
-        }
-    
     }
     
     .artist-section__heading h2, .section-review__heading h2{
         font-size: 1.9rem;
+    }
+
+    header{
+        justify-content: flex-start;
+        padding: 20px;
     }
 }
 
@@ -425,6 +437,33 @@ footer p{
         flex-direction: column;
     }
 }
+
+@media (max-width: 1200px) {
+    .sidebar {
+      max-width: 4.5rem;
+      min-width: 4.5rem;
+    }
+    .nav-link {
+      justify-content: center;
+      i {
+        color: #93c1cf !important;
+      }
+    }
+    .nav-link:hover,
+    .active {
+      i {
+        color: whitesmoke !important;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .nav-link {
+      padding-bottom: 0;
+      p {
+        margin-bottom: 7px;
+      }
+    }
+  }
 
 @media (min-width: 1350px) {
     .section-review__container {

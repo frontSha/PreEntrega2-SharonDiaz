@@ -18,31 +18,76 @@
   </head>
   <body>
     <main class="d-flex no-wrap">
-      <div class="sidebar d-flex flex-column flex-shrink-0 p-3">
+      <div class="sidebar d-flex flex-column flex-shrink-0 p-xl-3 d-none d-md-block">
         <div class="sidebar__logo d-flex align-items-center justify-content-center mb-3">
-          <h1>Musify.</h1>
+          <h1 class="d-none d-xl-block">Musify.</h1>
+          <img
+            class="mt-3 d-block d-xl-none"
+            src="assets/icons/musi.png"
+            alt=""
+            width="25"
+            height="25"
+          />
         </div>
         <ul class="sidebar__nav nav flex-column mb-auto gap-3">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link active" aria-current="page"><i class="ri-home-2-line pe-none me-3"></i>Inicio</a>
+          <li class="nav-item text-center text-xl-start">
+            <a href="./index.html" class="nav-link active" aria-current="page"
+              ><i class="ri-home-2-line pe-none me-xl-3"></i>
+              <p class="d-none d-xl-block">Inicio</p>
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="./explore.html" class="nav-link"><i class="ri-menu-search-line pe-none me-3"></i>Explorar</a>
+          <li class="nav-item text-center text-xl-start">
+            <a href="./explore.html" class="nav-link"
+              ><i class="ri-menu-search-line pe-none me-xl-3"></i>
+              <p class="d-none d-xl-block">Explorar</p>
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="./lists.html" class="nav-link"><i class="ri-play-list-line pe-none me-3"></i>Listas</a>
+          <li class="nav-item text-center text-xl-start">
+            <a href="./lists.html" class="nav-link"
+              ><i class="ri-play-list-line pe-none me-xl-3"></i>
+              <p class="d-none d-xl-block">Listas</p>
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="./reviews.html" class="nav-link"><i class="ri-star-line pe-none me-3"></i>Reseñas</a>
+          <li class="nav-item text-center text-xl-start">
+            <a href="./reviews.html" class="nav-link">
+              <i class="ri-star-line pe-none me-xl-3"></i>
+              <p class="d-none d-xl-block">Reseñas</p>
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="./forums.html" class="nav-link"><i class="ri-user-smile-line pe-none me-3"></i>Foros</a>
+          <li class="nav-item text-center text-xl-start">
+            <a href="./forums.html" class="nav-link"
+              ><i class="ri-user-smile-line pe-none me-xl-3"></i>
+              <p class="d-none d-xl-block">Foros</p>
+            </a>
           </li>
         </ul>
       </div>
-      
+
       <div class="container-right">
         <header>
+          <div id="toggle" class="d-md-none">
+            <button
+              class="navbar-toggler p-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#staticBackdrop"
+              aria-controls="staticBackdrop"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                class="bi"
+                fill="white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                ></path>
+              </svg>
+            </button>
+          </div>
           <div class="header__search">
             <i class="ri-search-line header__search--icon"></i>
             <input
@@ -54,17 +99,19 @@
             />
           </div>
           <div class="header__btns">
-            <input type="button" value="Ingresa" class="header__btns--login" />
+            <input type="button" value="Ingresa" class="header__btns--login d-none d-md-block" />
             <input
               type="button"
               value="Regístrate"
-              class="header__btns--signin"
+              class="header__btns--signin d-none d-md-block"
               onclick="window.location.href='register_form.html'"
             />
           </div>
         </header>
         <!-- sections -->
-        <section class="section-info d-flex flex-column flex-wrap justify-content-between align-items-center">
+        <section
+          class="section-info d-flex flex-column flex-wrap justify-content-between align-items-center"
+        >
           <div class="section-info__heading">
             <h1>Musify.</h1>
           </div>
@@ -86,14 +133,17 @@
             />
           </div>
         </section>
-        
+
         <section class="artist-section">
           <div class="artist-section__heading">
             <h2>Artistas Destacados</h2>
           </div>
           <div class="artist-section__grid container-lg text-center">
             <div class="row justify-content-center align-items-center gap-3">
-              <div class="artist-section__grid--artists artists col-lg-3" id="artist-1">
+              <div
+                class="artist-section__grid--artists artists col-lg-3"
+                id="artist-1"
+              >
                 <div class="artists__card">
                   <img
                     src="./assets/multimedia/LanaDelRey.jpg"
@@ -109,7 +159,10 @@
                   </div>
                 </div>
               </div>
-              <div class="artist-section__grid--artists artists col-lg-3" id="artist-2">
+              <div
+                class="artist-section__grid--artists artists col-lg-3"
+                id="artist-2"
+              >
                 <div class="artists__card">
                   <img
                     src="./assets/multimedia/TylerTheCreator.jpeg"
@@ -125,7 +178,10 @@
                   </div>
                 </div>
               </div>
-              <div class="artist-section__grid--artists artists col-lg-3" id="artist-3">
+              <div
+                class="artist-section__grid--artists artists col-lg-3"
+                id="artist-3"
+              >
                 <div class="artists__card">
                   <img
                     src="./Assets/Multimedia/Radiohead.jpg"
@@ -144,7 +200,7 @@
             </div>
           </div>
         </section>
-        <!-- separación section -->
+
         <section class="section-review">
           <div class="section-review__heading">
             <h2>Reseñas Destacadas</h2>
@@ -152,14 +208,22 @@
           <div class="section-review__container container-review">
             <div class="container-review__card card-review">
               <div class="card-review__left">
-                <img src="./assets/multimedia/borntodie.png" alt="Born To Die Cover" class="card-review__left--img">
+                <img
+                  src="./assets/multimedia/borntodie.png"
+                  alt="Born To Die Cover"
+                  class="card-review__left--img"
+                />
                 <h3>Born To Die</h3>
                 <h4>Lana Del Rey</h4>
               </div>
               <div class="card-review__right">
                 <div class="card-review__right--content">
                   <h5>Nombre Usuario</h5>
-                  <p>Aquí van las reseñas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ea nobis veniam... <a href="#">ver más.</a></p>
+                  <p>
+                    Aquí van las reseñas. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Aliquid ea nobis veniam...
+                    <a href="#">ver más.</a>
+                  </p>
                 </div>
                 <div class="card-review__right--rating">
                   <h6>Calificación: 4.0</h6>
@@ -169,14 +233,22 @@
 
             <div class="container-review__card card-review">
               <div class="card-review__left">
-                <img src="./assets/multimedia/FlowerBoy.png" alt="Born To Die Cover" class="card-review__left--img">
+                <img
+                  src="./assets/multimedia/FlowerBoy.png"
+                  alt="Born To Die Cover"
+                  class="card-review__left--img"
+                />
                 <h3>Flower Boy</h3>
                 <h4>Tyler, The Creator</h4>
               </div>
               <div class="card-review__right">
                 <div class="card-review__right--content">
                   <h5>Nombre Usuario</h5>
-                  <p>Aquí van las reseñas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ea nobis veniam... <a href="#">ver más.</a></p>
+                  <p>
+                    Aquí van las reseñas. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Aliquid ea nobis veniam...
+                    <a href="#">ver más.</a>
+                  </p>
                 </div>
                 <div class="card-review__right--rating">
                   <h6>Calificación: 4.0</h6>
@@ -186,14 +258,22 @@
 
             <div class="container-review__card card-review">
               <div class="card-review__left">
-                <img src="./assets/multimedia/Inrainbowscover.png" alt="Born To Die Cover" class="card-review__left--img">
+                <img
+                  src="./assets/multimedia/Inrainbowscover.png"
+                  alt="Born To Die Cover"
+                  class="card-review__left--img"
+                />
                 <h3>In Rainbows</h3>
                 <h4>Radiohead</h4>
               </div>
               <div class="card-review__right">
                 <div class="card-review__right--content">
                   <h5>Nombre Usuario</h5>
-                  <p>Aquí van las reseñas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ea nobis veniam... <a href="#">ver más.</a></p>
+                  <p>
+                    Aquí van las reseñas. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Aliquid ea nobis veniam...
+                    <a href="#">ver más.</a>
+                  </p>
                 </div>
                 <div class="card-review__right--rating">
                   <h6>Calificación: 4.0</h6>
@@ -202,10 +282,10 @@
             </div>
           </div>
         </section>
-        <footer>
-          <div class="footer__links">
+        <footer class="d-flex flex-column justify-content-center align-items-center">
+          <div class="footer__links d-flex flex-wrap justify-content-center align-items-center">
             <h2>Musify.</h2>
-            <ul>
+            <ul class="d-flex align-items-center">
               <li><a href="#">Inicio</a></li>
               <li><a href="#">Foros</a></li>
               <li><a href="#">Regístrate</a></li>
@@ -215,6 +295,61 @@
           <p>Copyright © 2024 Musify. Page. All rights reserved.</p>
         </footer>
       </div>
+
+      <div
+        class="offcanvas offcanvas-start text-bg-dark"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title ms-4" id="staticBackdropLabel">Musify.</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="sidebar__nav nav flex-column mb-auto gap-3">
+            <li class="nav-item text-center">
+              <a
+                href="./index.html"
+                class="nav-link nav-link__offcanvas"
+                aria-current="page"
+                ><i class="ri-home-2-line pe-none me-3 text-light"></i>
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item text-center">
+              <a href="./explore.html" class="nav-link nav-link__offcanvas"
+                ><i class="ri-menu-search-line pe-none me-3 text-light"></i>
+                Explorar
+              </a>
+            </li>
+            <li class="nav-item text-center">
+              <a href="./lists.html" class="nav-link nav-link__offcanvas"
+                ><i class="ri-play-list-line pe-none me-3 text-light"></i>
+                Listas
+              </a>
+            </li>
+            <li class="nav-item text-center">
+              <a href="./reviews.html" class="nav-link nav-link__offcanvas">
+                <i class="ri-star-line pe-none me-3 text-light"></i>
+                Reseñas
+              </a>
+            </li>
+            <li class="nav-item text-center">
+              <a href="./forums.html" class="nav-link nav-link__offcanvas"
+                ><i class="ri-user-smile-line pe-none me-3 text-light"></i>
+                Foros
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> 
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
