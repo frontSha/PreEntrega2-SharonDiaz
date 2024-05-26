@@ -254,7 +254,7 @@ header {
     border-radius: 8px;
     color: whitesmoke;
     max-width: 25rem;
-    min-width: none;
+    min-width: 20rem;
     gap: 1rem;
 }
 
@@ -272,8 +272,8 @@ header {
 }
 
 .card-review__left--img{
-    width: 9rem;
-    height: 9rem;
+    max-width: 9rem;
+    max-height: 9rem;
     margin: 10px;
 }
 
@@ -317,6 +317,7 @@ footer p{
 
 .footer__links{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: fit-content;
@@ -328,15 +329,101 @@ footer p{
     align-items: center;
     margin: auto;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .footer__links li{
-    width: 9rem;
-    display: flex;
-    justify-content: center;
+    max-width: 9rem;
+    min-width: 5rem;
+    text-align: center;
 }
 
 .footer__links a{
     text-decoration: none;
     color: whitesmoke;
+}
+
+/* Responsive */
+@media (max-width:576px) {
+    .container-review__card{
+        display: flex;
+        flex-direction: column;
+
+        .card-review__right{
+            text-align: justify;
+        }
+
+        .card-review__left--img{
+            max-width: 7rem;
+            max-height: 7rem;
+        }
+    }
+
+    .artist-section__heading h2, .section-review__heading h2{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:767px) {
+    .section-review__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        .card-review__left, .card-review__right{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .card-review__left h3{
+            font-size: 1.3em;
+        }
+
+        .card-review__left h4{
+            font-size: 1.2em;
+        }
+    
+    }
+    
+    .artist-section__heading h2, .section-review__heading h2{
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width:768px) {
+    .section-review__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        
+        .container-review__card{
+            height: fit-content;
+            max-width: 27rem;
+        }
+        .card-review__left, .card-review__right{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1350px) {
+    .artists__card{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1350px) {
+    .section-review__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container-review__card {
+        max-width: 30rem;
+    }
 }
