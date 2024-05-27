@@ -9,87 +9,137 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    width: 100%;
+}
+
+main{
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
 .sidebar{
+    max-width: 200px;
+    min-width: 200px;
     background: #1b2024;
     position: sticky;
     top: 0;
 }
 
-.navbar {
-    padding: 10px 0 10px 30px;
+.nav-item:hover, .active{
+    background: #323b42;
+    border-radius: 8px;
 }
 
-.logo-nav{
-    font-size: large;
-    cursor: pointer;
-}
-
-.item {
-    margin: 5px;
-}
-
-.item a, .item i {
+.nav-link, .nav-link i{
     text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: flex;
+}
+
+.nav-link:hover{
     color: whitesmoke;
 }
 
-.item a:hover{
-    color:#93c1cf;
+.nav-link__offcanvas {
+    i {
+      color: whitesmoke !important;
+    }
+  }
+
+.sidebar__logo{
+    color: whitesmoke;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.container-right{
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    background: #121212;
 }
 
 header {
-    padding: 10px 0 10px 30px;
+    background: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 20px 40px;
+    /* position: sticky;
+    top: 0; */
+    gap: 16px;
 }
 
-.searchBar, .buttonSignin, .buttonLogin{
+.header__search{
+    min-width: 15rem;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.header__search:focus-within{
+    background: #17191a;
     border-radius: 8px;
-    padding: 6px;
     border-style: none;
 }
 
-.searchBar{
+.header__search--input{
     background: transparent;
-    width: 500px;
     color: whitesmoke;
-    font-size: medium;
 }
 
-.searchBar:focus{
+.header__search--input:focus{
     outline: none;
 }
 
-.userButtons {
-    margin: 6px;
+.header__search--input, .header__search--icon{
+    font-size: 1.2em;
+    color: gray;
+    padding: 6px;
 }
 
-.buttonSignin, .buttonLogin{
+.header__btns{
+    display: flex;
+    gap: 16px;
+    width: 15.625rem;
+    justify-content: flex-end;
+}
+
+.header__btns--signin{
     cursor: pointer;
-    font-weight: bolder;
-    background: #93c1cf;
-    color: #1b2024;
-}
-
-.buttonSignin:hover, .buttonLogin:hover{
+    font-weight: 700;
     background: #a4d7e7;
+    color: #1b2024;
+    width: 6rem;
 }
 
-body{
-    width: 100%;
-    background: #121212;
-    color: whitesmoke;
-
-}
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-ul{
-    list-style: none;
-}
-.navbar{
-    background-color: #1b2024;
+.header__btns--signin:hover{
+    background: #93c1cf;
 }
 
+.header__btns--login{
+    background: transparent;
+    color: #a4d7e7;
+    width: 6rem;
+    border: solid 1px #a4d7e7;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.header__btns--login:hover{
+    background: #17191a;
+}
+
+.header__search--input, .header__btns--signin{
+    border-radius: 8px; 
+    padding: 6px;
+    border-style: none;
+}
 
 .heading{
     margin: 40px;
@@ -114,11 +164,76 @@ width: 150px;
 height: auto;
 }
 
-footer {
-    padding: 10px 0 10px 30px;
-    background: #17191a;
-}
-
 .more:hover{
     text-decoration: underline;
 }
+
+footer{
+    width: 100%;
+    background: #17191a;
+    padding: 40px;
+    gap: 30px;
+    color: whitesmoke;
+}
+
+footer p{
+    color: rgba(245, 245, 245, 0.808);
+    text-align: center;
+}
+
+.footer__links{
+    width: fit-content;
+}
+
+.footer__links ul{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.footer__links li{
+    max-width: 9rem;
+    min-width: 5rem;
+    text-align: center;
+}
+
+.footer__links a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Responsive */
+@media (max-width:767px) {
+    header{
+        justify-content: flex-start;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sidebar {
+      max-width: 4.5rem;
+      min-width: 4.5rem;
+    }
+    .nav-link {
+      justify-content: center;
+      i {
+        color: #93c1cf !important;
+      }
+    }
+    .nav-link:hover,
+    .active {
+      i {
+        color: whitesmoke !important;
+      }
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .nav-link {
+      padding-bottom: 0;
+      p {
+        margin-bottom: 7px;
+      }
+    }
+  }
