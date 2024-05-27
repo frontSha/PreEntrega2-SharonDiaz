@@ -1,6 +1,6 @@
 @font-face {
     font-family: Afacad;
-    src: url(/assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
 }
 
 *{
@@ -27,17 +27,6 @@ main{
     top: 0;
 }
 
-/* .sidebar__nav{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0 0 30px;
-    gap: 60px;
-    height: 100%;
-    width: 200px;
-} */
-
-/* cambiar a bootstrap */
 .nav-item:hover, .active{
     background: #323b42;
     border-radius: 8px;

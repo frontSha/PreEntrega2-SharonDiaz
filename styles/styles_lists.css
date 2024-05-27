@@ -1,6 +1,6 @@
 @font-face {
     font-family: Afacad;
-    src: url(/assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
 }
 
 *{
@@ -237,10 +237,6 @@ footer p{
 @media (max-width:767px) {
     header{
         justify-content: flex-start;
-        padding: 20px;
-    }
-
-    footer{
         padding: 20px;
     }
 }

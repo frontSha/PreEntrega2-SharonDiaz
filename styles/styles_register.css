@@ -1,6 +1,6 @@
 @font-face {
     font-family: Afacad;
-    src: url(/assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Afacad/Afacad-VariableFont_wght.ttf);
 }
 
 * {
@@ -21,7 +21,7 @@ body {
     color: whitesmoke;
 	max-width: 600px;
 	margin: 50px auto;
-	padding: 20px 40px;
+	padding: 40px;
 	background-color: #1b2024;
 	border-radius: 6px;
 }
@@ -102,5 +102,9 @@ label {
 @media (max-width: 750px) {
 	body {
 	  background-color: #1b2024;
+	}
+
+	.container{
+		padding: 20px;
 	}
   }
