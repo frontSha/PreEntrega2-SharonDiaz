@@ -21,14 +21,18 @@ body {
     color: whitesmoke;
 	max-width: 600px;
 	margin: 50px auto;
-	padding: 20px 40px 20px 40px;
+	padding: 20px 40px;
 	background-color: #1b2024;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 
 .form {
     padding-top: 12px;
 	margin-bottom: 20px;
+}
+
+.form h3 {
+	color: #93c1cf !important;
 }
 
 label {
@@ -37,23 +41,6 @@ label {
 	font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"]{
-    border-radius: 8px; 
-    padding: 6px;
-    border-style:ridge;
-    background: transparent;
-    width: 400px;
-    color: whitesmoke;
-    font-size: medium;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="file"]:focus {
-    outline: none;
-}
 
 #login {
 	display: flex;
@@ -65,47 +52,55 @@ input[type="file"]:focus {
 	display: block;
 	width: 100px;
 	padding: 10px;
-	background-color: #93c1cf;
-	color: #1b2024;
+	background: transparent;
 	border: none;
 	border-radius: 4px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: bold;
 	text-decoration: none;
-}
-
-.botones-redes:hover {
-	background-color: #a4d7e7;
-}
-
-button[type="submit"] {
+	color: #a4d7e7;
+	border: solid 1px #a4d7e7;
+	border-radius: 8px;
+	padding: 6px;
+  }
+  
+  .botones-redes:hover {
+	background: #17191a;
+  }
+  
+  button[type="submit"] {
 	width: 100%;
 	padding: 10px;
-	background-color: #141414;
-	color: whitesmoke;
-	border: none;
-	border-radius: 4px;
-	font-size: 16px;
 	cursor: pointer;
-}
-
-button[type="submit"]:hover {
-	background-color: #121212;
-}
+	font-weight: 700;
+	background: #a4d7e7;
+	color: #1b2024;
+	cursor: pointer;
+	border-radius: 8px;
+	font-size: 1.2em;
+  }
+  
+  button[type="submit"]:hover {
+	background: #93c1cf;
+  }
 
 .return {
-	display: flex;
 	margin-top: 20px;
 	gap: 6px;
-	align-items: center;
+
+	a {
+		color: whitesmoke;
+		text-decoration: none;
+	}
+	a:hover{
+		color: #93c1cf;
+	}
 }
 
-.return a{
-	color: whitesmoke;
-	text-decoration: none;
-}
 
-.return a:hover{
-	text-decoration: underline;
-}
+@media (max-width: 750px) {
+	body {
+	  background-color: #1b2024;
+	}
+  }
